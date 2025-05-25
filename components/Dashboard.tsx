@@ -70,7 +70,7 @@ export default function Dashboard() {
         <section className="container mt-16 sm:px-6 lg:px-8 bg-grey-900 shadow-lg rounded-lg overflow-hidden border-gray-200 pt-10 pb-10">
           <h2 className="text-3xl font-semibold text-center mb-10 text-primary">Explore Our Varieties</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {categories.map((category, index) => (
+            {categories.map((category) => (
               <Link key={category.slug} href={`/collections/${category.slug}`} className="group">
                 <Card className="overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 h-full flex flex-col">
                   <CardHeader className="p-0">
