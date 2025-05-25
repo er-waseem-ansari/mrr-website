@@ -1,7 +1,6 @@
 
 
 import Link from "next/link";
-import { ChevronRight} from "lucide-react";
 export default function TheArtOfRugMaking() {
   return (
 <section className="bg-card p-8 md:p-12 my-10 width-full">

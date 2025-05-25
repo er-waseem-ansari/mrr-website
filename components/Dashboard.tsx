@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { TrendingUp } from "lucide-react";
 import { categories } from "@/data/mockData";
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
-import { Loader2 } from "lucide-react";
 import RugIndustryInfoCard1 from './ui/rugIndustryInfoCard1';
 import RugIndustryInfoCard2 from './ui/rugIndustryInfoCard2';
 import TheArtOfRugMaking from './ui/theArtOfRugMaking';
