@@ -1,4 +1,5 @@
 // components/ProductCard.tsx
+'use client';
 import Image from 'next/image';
 
 type Product = {

@@ -1,3 +1,5 @@
+'use client';
+
 import TrendingCard from '@/components/TrendingCard';
 import Image from 'next/image';
 import Link from 'next/link';
