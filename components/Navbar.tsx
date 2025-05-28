@@ -5,13 +5,15 @@ import Link from 'next/link';
 import { ShoppingCart, User, Menu } from 'lucide-react';
 import { useSelector } from 'react-redux';
 import { useRouter } from 'next/navigation';
+import { RootState } from '@/app/store/store';
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const user = useSelector((state: any) => state.auth.user); // Access auth state
+  const user = useSelector((state: RootState) => state.auth.user); // Access auth state
 
   // Close menu on outside click
   useEffect(() => {
