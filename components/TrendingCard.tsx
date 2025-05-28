@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface CardProps {
   imageUrl: string;
   heading: string;
@@ -8,9 +10,11 @@ export default function TrendingCard({ imageUrl, heading, description }: CardPro
   return (
     <div className="relative w-[400px] h-[300px] rounded-lg overflow-hidden shadow-lg">
       {/* Background Image with reduced opacity */}
-      <img
+      <Image
         src={imageUrl}
         alt={heading}
+        width={800}
+        height={600}
         className="w-full h-full object-cover opacity-80"
       />
 
